@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - TechRecycler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="/placeholder.svg?height=50&width=50" alt="TechRecycler Logo" class="logo-image">
+            <span class="company-name">TechRecycler</span>
+        </div>
+        <button onclick="logout()" class="logout-btn">Cerrar Sesión</button>
+    </header>
+    <div class="main-content">
+        <div class="container">
+            <div class="admin-panel">
+                <div class="card">
+                    <h2 class="text-center mb-2">Historial de Inicios de Sesión</h2>
+                    <ul id="loginHistory"></ul>
+                </div>
+                <div class="card">
+                    <h2 class="text-center mb-2">Agregar Nuevo Usuario</h2>
+                    <form id="addUserForm">
+                        <div class="form-group">
+                            <label for="newUsername">Nombre de usuario</label>
+                            <input type="text" id="newUsername" class="input" placeholder="Nombre de usuario" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">Contraseña</label>
+                            <input type="password" id="newPassword" class="input" placeholder="Contraseña" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newRole">Rol</label>
+                            <select id="newRole" class="input" required>
+                                <option value="cliente">Cliente</option>
+                                <option value="admin">Administrador</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Agregar Usuario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto Reciclado - TechRecycler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="/placeholder.svg?height=50&width=50" alt="TechRecycler Logo" class="logo-image">
+            <span class="company-name">TechRecycler</span>
+        </div>
+        <div class="user-info">
+            <span id="userPoints">Puntos: 0</span>
+            <button onclick="logout()" class="logout-btn">Cerrar Sesión</button>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="container">
+            <div class="card product-card">
+                <h2 class="text-center mb-2">Materiales que puedes reciclar.</h2>
+                <div class="product-image">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Botella de Agua Reutilizable" class="img-responsive">
+                </div>
+                <div class="product-description">
+                    <p>Con nuestra iniciativa buscamos  reciclar y reutilizar materiales para reducir el impacto ambiental, por ello establecimos varios puntos en la ciudad donde se pueden depositar materiales reciclables, estos materiales seran evaluados por nuestros dependientes y se añadiran puntos en funcion del tipo de material y el gramaje de este.</p>
+
+                    <h3>Materiales admitidos:</h3>
+                    <ul>
+                        <li>Botellas de plastico</li>
+                        <li>Tapas y tapones de plastico</li>
+                        <li>Latas de aluminio</li>
+                        <li>Carton</li>
+                        <li>Papel</li>
+                    </ul>
+                    <h3>Nuestras sucursales:</h3>
+                    <p>Dirección: Ave. Cristóbal Colón 2059 Esq, 20 de Noviembre, 64480 Monterrey, Nuevo León</p>
+                    <p>81 3402 2994</p>
+                    <p>Lunes a viernes de 8am a 6pm</p>
+                </div>
+
+                <div class="productoscarrusel">
+                    <p>Algunos productos que puedes canjear son:</p>
+                    <div class="carousel">
+                        <button class="carousel-btn prev-btn" aria-label="Producto anterior">&lt;</button>
+                        <div class="carousel-container">
+                            <img src="img/producto1.jpg" alt="Producto 1" class="carousel-image">
+                            <img src="img/producto2.jpg" alt="Producto 2" class="carousel-image">
+                            <img src="img/producto3.jpg" alt="Producto 3" class="carousel-image">
+                            <img src="img/producto 4.jpg" alt="Producto 4" class="carousel-image">
+                            <img src="img/producto5.jpg" alt="Producto 5" class="carousel-image">
+                        </div>
+                        <button class="carousel-btn next-btn" aria-label="Siguiente producto">&gt;</button>
+                </div>
+                <div class="product-info">
+                    <h2 id="productTitle" class="text-center mb-2">Producto 1</h2>
+                    <p id="productAvailability" class="text-center">7 unidades disponibles</p>
+                    <p id="productCost" class="text-center">Costo: 500 pts</p>
+                </div>
+                </div>
+                <!--
+                <div class="product-action">
+                    <button class="btn btn-large">Comprar Ahora</button>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
