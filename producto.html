@@ -14,19 +14,34 @@
         </div>
         <div class="user-info">
             <span id="userPoints">Puntos: 0</span>
-            <button onclick="logout()" class="logout-btn">Cerrar Sesión</button>
+            <button onclick="logout()" class="green-btn">Cerrar Sesión</button>
+            <a href="#productoscanje">
+                <button class="green-btn">Productos</button>
+            </a>
         </div>
     </header>
+    <section id="Inicio">.
+    </section>
     <div class="main-content">
         <div class="container">
             <div class="card product-card">
+                <div class="bienvenida">
+                    <h1>Bienvenidos a TechRecycler</h1>
+                    <h2>Nuestro propósito</h2>
+                    <p>En TechRecycler buscamos fomentar el reciclaje en la gente, queremos que vean que hay valor en los objetos que
+                        ellos llaman basura, por esto mismo y a raiz de un pequeño producto desarrollado en la universidad
+                        estamos implementando un  sistema de reciclaje que permita a los usuarios canjear sus materiales de reciclaje
+                        por  puntos que pueden ser canjeados por productos comunes, entre dichos productos comunes enontramos
+                        la canasta basica que puede ser desde rollo hasta aceite de cocina, y en casos de mas puntos tenemos un premio
+                        mayor, un Playstation 5</p>
+                    </p>
+                </div>    
+
                 <h2 class="text-center mb-2">Materiales que puedes reciclar.</h2>
                 <div class="product-image">
-                    <img src="/placeholder.svg?height=300&width=300" alt="Botella de Agua Reutilizable" class="img-responsive">
+                    <img src="img/producto imagen de reciclaje1.jpg" alt="reciclaje1" class="img-responsive">
                 </div>
                 <div class="product-description">
-                    <p>Con nuestra iniciativa buscamos  reciclar y reutilizar materiales para reducir el impacto ambiental, por ello establecimos varios puntos en la ciudad donde se pueden depositar materiales reciclables, estos materiales seran evaluados por nuestros dependientes y se añadiran puntos en funcion del tipo de material y el gramaje de este.</p>
-
                     <h3>Materiales admitidos:</h3>
                     <ul>
                         <li>Botellas de plastico</li>
@@ -35,14 +50,32 @@
                         <li>Carton</li>
                         <li>Papel</li>
                     </ul>
+                    <p>Con nuestra iniciativa buscamos  reciclar y reutilizar materiales para reducir el impacto ambiental, por ello establecimos varios puntos en la ciudad 
+                        donde se pueden depositar materiales reciclables, estos materiales seran evaluados por nuestros dependientes y se añadiran puntos en funcion del tipo 
+                        de material y el gramaje de este.
+                    </p>
+                    <h3>Tipo de convercion:</h3>
+                    <ul>
+                        <li>Botellas de plastico: 10 punto por cada 500 gramos</li>
+                        <li>Tapas y tapones de plastico: 10 punto por cada 50 gramos</li>
+                        <li>Aluminio: 10 punto cada  50 gramos</li>
+                        <li>Carton:  10 punto por cada 500 gramos</li>
+                        <li>Vidrio:  10 punto por cada 300 gramos</li>
+
+
+
+                    </ul>
+
                     <h3>Nuestras sucursales:</h3>
                     <p>Dirección: Ave. Cristóbal Colón 2059 Esq, 20 de Noviembre, 64480 Monterrey, Nuevo León</p>
                     <p>81 3402 2994</p>
                     <p>Lunes a viernes de 8am a 6pm</p>
                 </div>
 
+                <section id="productoscanje">
+                </section>
                 <div class="productoscarrusel">
-                    <p>Algunos productos que puedes canjear son:</p>
+                    <h2>Algunos productos que puedes canjear son:</h2>
                     <div class="carousel">
                         <button class="carousel-btn prev-btn" aria-label="Producto anterior">&lt;</button>
                         <div class="carousel-container">
@@ -60,14 +93,21 @@
                     <p id="productCost" class="text-center">Costo: 500 pts</p>
                 </div>
                 </div>
-                <!--
-                <div class="product-action">
-                    <button class="btn btn-large">Comprar Ahora</button>
-                </div>
-                -->
+            
             </div>
-        </div>
+            </div>
+        
     </div>
+
+
+<footer>
+   <p>TechRecycler</p>
+    <p>Llamen a Jared el se encarga: 8126078379</p>
+    <p> <a href="">Nosequecorreoponerperoaquiva@gmail.com</a></p>
+    <a href="#Inicio">
+    <button class="green-btn">Volver arriba</button>
+    </a>
+  </footer>
     <script src="script.js"></script>
 </body>
 </html>

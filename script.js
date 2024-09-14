@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 // Simular una base de datos de usuarios
 let users = JSON.parse(localStorage.getItem('users')) || [
     { username: 'admin1', password: 'admin1', role: 'admin1' },
@@ -16,6 +28,17 @@ function saveUsers() {
 function saveLoginHistory() {
     localStorage.setItem('loginHistory', JSON.stringify(loginHistory));
 }
+
+//
+
+
+
+
+
+
+
+
+
 
 // Manejar el registro de usuarios
 if (document.getElementById('registroForm')) {
