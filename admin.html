@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración - TechRecycler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="menu-toggle" aria-label="Abrir menú" class="menu-toggle">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="menu" class="menu">
+        <ul>
+          <li><button onclick="logout()" class="menu-button">Cerrar Sesión</button></li>
+          <li><a href="producto.html" class="menu-button">Productos</a></li>
+        </ul>
+      </nav>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="img/Logo.png" alt="TechRecycler Logo" class="logo-image" width="50" height="50">
+            <span class="company-name">TechRecycler</span>
+        </div>
+        <button onclick="logout()" class="green-btn">Cerrar Sesión</button>
+    </header>
+    <div class="main-content">
+        <div class="container">
+            <div class="admin-panel">
+                <div class="card">
+                    <h2 class="text-center mb-2">Historial de Inicios de Sesión</h2>
+                    <ul id="loginHistory"></ul>
+                </div>
+                <div class="card">
+                    <h2 class="text-center mb-2">Agregar Nuevo Usuario</h2>
+                    <form id="addUserForm">
+                        <div class="form-group">
+                            <label for="newUsername">Nombre de usuario</label>
+                            <input type="text" id="newUsername" class="input" placeholder="Nombre de usuario" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">Contraseña</label>
+                            <input type="password" id="newPassword" class="input" placeholder="Contraseña" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newRole">Rol</label>
+                            <select id="newRole" class="input" required>
+                                <option value="cliente">Cliente</option>
+                                <option value="admin">Administrador</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Agregar Usuario</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
