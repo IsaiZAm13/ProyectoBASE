@@ -52,7 +52,8 @@ class LoginPage extends StatelessWidget {
                   ElevatedButton(
                     child: Text('Iniciar Sesión'),
                     onPressed: () {
-                      
+                      // Para llegar a productos
+                      Navigator.pushReplacementNamed(context, '/producto');
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
@@ -64,6 +65,7 @@ class LoginPage extends StatelessWidget {
                     child: Text('¿No tienes una cuenta? Regístrate aquí'),
                     onPressed: () {
                       Navigator.pushNamed(context, '/registro');
+                      // Para ir al registro
                     },
                   ),
                 ],

@@ -12,6 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  flutter_swiper_view: ^1.1.8
+
 
 dev_dependencies:
   flutter_test:
@@ -23,3 +25,9 @@ flutter:
   assets:
     - assets/fondo_logging.jpg
     - assets/logo.jpg
+    - assets/producto_imagen_de_reciclaje1.jpg
+    - assets/producto1.jpg
+    - assets/producto2.jpg
+    - assets/producto3.jpg
+    - assets/producto4.jpg
+    - assets/producto5.jpg
