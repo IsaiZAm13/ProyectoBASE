@@ -20,7 +20,7 @@ class _ProductoPageState extends State<ProductoPage> {
           children: [
             Image.asset('assets/logo.jpg', height: 50),
             SizedBox(width: 10),
-            Text('TechRecycler'),
+            Text('Green Cycle'),
           ],
         ),
         backgroundColor: Colors.green,

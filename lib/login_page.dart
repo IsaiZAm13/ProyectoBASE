@@ -9,7 +9,7 @@ class LoginPage extends StatelessWidget {
           children: [
             Image.asset('assets/logo.jpg', height: 50),
             SizedBox(width: 10),
-            Text('TechRecycler'),
+            Text('Green Cycle'),
           ],
         ),
         backgroundColor: Colors.green,
@@ -53,7 +53,7 @@ class LoginPage extends StatelessWidget {
                     child: Text('Iniciar Sesión'),
                     onPressed: () {
                       // Para llegar a productos
-                      Navigator.pushReplacementNamed(context, '/producto');
+                      Navigator.pushReplacementNamed(context, '/UserAdminPage');
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,

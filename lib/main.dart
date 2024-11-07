@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:index/UserAdminPage.dart';
 import 'login_page.dart';
 import 'registro_page.dart';
 import 'producto_page.dart';
+import 'EcoAmigoPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -20,6 +22,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/registro': (context) => RegistroPage(),
         '/producto': (context) => ProductoPage(),
+        '/UserAdminPage': (context) => UserAdminPage(),
+        '/EcoAmigoPage': (context) => EcoAmigoPage(),
       }
       
     );
