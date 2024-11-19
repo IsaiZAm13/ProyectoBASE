@@ -73,13 +73,14 @@ class _UserAdminPageState extends State<UserAdminPage> {
           DataColumn(label: Text('Nombre')),
           DataColumn(label: Text('Email')),
           DataColumn(label: Text('Rol')),
-          DataColumn(label: Text('Estado')),
+          DataColumn(label: Text('Pass')),
         ],
         rows: users.map((user) {
           return DataRow(cells: [
             DataCell(Text(user.name)),
             DataCell(Text(user.apellido)),
             DataCell(Text(user.role)),
+            DataCell(Text(user.password)),
       
           ]);
         }).toList(),
