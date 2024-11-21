@@ -36,3 +36,11 @@
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
+
+<script>
+   if ('serviceWorker' in navigator){
+    window.addEventListener('fluuter-first-frame', function(){
+      navigator.serviceWorker.register('/sw.dart')
+    })
+   }
+</script>
